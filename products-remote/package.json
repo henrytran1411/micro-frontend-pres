@@ -1,0 +1,35 @@
+{
+  "name": "micro-fe-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:macos": "rm -rf .next; NEXT_PRIVATE_LOCAL_WEBPACK=true next dev -p 3002",
+    "dev": "set NEXT_PRIVATE_LOCAL_WEBPACK=true && set NODE_OPTIONS=--max_old_space_size=8000 && next dev -p 3002",
+    "build:macos": "NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
+    "build": "set NEXT_PRIVATE_LOCAL_WEBPACK=true && set NODE_OPTIONS=--max_old_space_size=8000 && next build",
+    "start": "NEXT_PRIVATE_LOCAL_WEBPACK=true NODE_ENV=production next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "^8.8.18",
+    "@reduxjs/toolkit": "^2.6.1",
+    "@tanstack/react-query": "^5.67.2",
+    "antd": "^5.24.3",
+    "lucide-react": "^0.479.0",
+    "next": "14.2.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.2.0",
+    "recoil": "^0.7.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.21",
+    "typescript": "^5",
+    "webpack": "^5.98.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "micro-fe-test",
+  "version": "1.0.0",
+  "description": "Module Federation with NextJS and Client-Side React Remotes",
+  "private": true,
+  "main": "index.tsx",
+  "scripts": {
+    "start": "pnpm --filter micro-fe-test* run dev",
+    "build": "pnpm --filter micro-fe-test* run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
